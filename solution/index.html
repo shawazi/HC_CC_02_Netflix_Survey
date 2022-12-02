@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <title> Netflix Survey </title>
+</head>
+<body>
+  <main>
+    <header>
+      <h1> Net<span>flix</span></h1>
+      <p> Thank you for signing up at Netflix. Tell us more about yourself. </p>
+    </header>
+
+    <section id="form-container">
+
+      <form autocomplete="off" action="./result.html">
+        <div class="form">
+          <label for="name"> Name </label>
+          <input type="text" id="name" placeholder="Full Name">
+        </div>
+
+        <div class="form">
+          <label for="number"> Age </label>
+          <input type="number" id="age" placeholder="Age"/>
+        </div>
+
+        <div class="form">
+          <label for="email"> Email </label>
+          <input type="email" id="email" placeholder="Email"/>
+        </div>
+
+        <div class="form">
+          <label for="name"> Content Type </label>
+          <select id="content-type" name="content_type">
+            <option value="movie"> Movie </option>
+            <option value="series"> Series </option>
+          </select>
+        </div>
+        
+        <h2> Genre </h2>
+
+        <div class="form">
+          <input type="checkbox" id="comedy" name="comedy" value="true"/>
+          <label for="comedy"> Comedy </label>
+        </div>
+        <div class="form">
+          <input type="checkbox" id="horror" name="horror" value="true"/>
+          <label for="horror"> Horror </label>
+        </div>
+        <div class="form">
+          <input type="checkbox" id="romance" name="romance" value="true"/>
+          <label for="romance"> Romance </label>
+        </div>
+        <div class="form">
+          <input type="checkbox" id="scifi" name="scifi" value="true"/>
+          <label for="scifi"> Science Fiction </label>
+        </div>
+        <div class="form">
+          <input type="checkbox" id="action" name="action" value="true"/>
+          <label for="action"> Action </label>
+        </div>
+        <div class="form">
+          <input type="checkbox" id="adventure" name="adventure" value="true"/>
+          <label for="adventure"> Adventure </label>
+        </div>
+        <div class="form">
+          <input type="checkbox" id="fantasy" name="fantasy" value="true"/>
+          <label for="fantasy"> Fantasy </label>
+        </div>
+
+        <h2> Gender </h2>
+        <div class="form">
+          <input type="radio" name="gender" id="male" value="male">
+          <label id="male"> Male </label>
+        </div>
+        <div class="form">
+          <input type="radio" name="gender" id="female" value="female">
+          <label id="female"> Female </label>
+        </div>
+        <div class="form">
+          <input type="radio" name="gender" id="other" value="other">
+          <label id="other"> Other </label>
+        </div>
+
+        <div class="form">
+          <label> Feedback </label>
+          <textarea cols="30" rows="5" placeholder="Feel free to leave any comments here about your experience!"></textarea>
+        </div>
+
+        <div class="center">
+          <button> Send </button>
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
